@@ -11,7 +11,7 @@ after creation. From time to time, some "extra" maintenance on the versions are
 needed and this document describes those activities.
 
 [MkDocs Material]: https://squidfunk.github.io/mkdocs-material/
-[publish-docs]: https://github.com/hyperledger/aries-cloudagent-python/blob/main/.github/workflows/publish-docs.yml
+[publish-docs]: https://github.com/openwallet-foundation/acapy/blob/main/.github/workflows/publish-docs.yml
 
 ## Generation Process
 
@@ -20,7 +20,7 @@ and mkdocs configuration.
 
 When the GitHub Action fires, it runs a container that carries out the following steps:
 
-- Checks out the triggering branch, either `main` or `docs-v<version>` (e.g `docs-v1.0.1rc1`).
+- Checks out the triggering branch, either `main` or `docs-v<version>` (e.g `docs-v1.0.1`).
 - Runs the script [scripts/prepmkdocs.sh], which moves and updates some of the
   markdown files so that they fit into the generated site. See the comments in
   the scripts for details about the copying and editing done via the script. In
@@ -35,8 +35,8 @@ When the GitHub Action fires, it runs a container that carries out the following
   to look at. The process uses the [mkdocs.yml] configuration file in generating
   the site.
 
-[scripts/prepmkdocs.sh]: https://github.com/hyperledger/aries-cloudagent-python/blob/main/scripts/prepmkdocs.sh
-[mkdocs.yml]: https://github.com/hyperledger/aries-cloudagent-python/blob/main/mkdocs.yml
+[scripts/prepmkdocs.sh]: https://github.com/openwallet-foundation/acapy/blob/main/scripts/prepmkdocs.sh
+[mkdocs.yml]: https://github.com/openwallet-foundation/acapy/blob/main/mkdocs.yml
 
 ## Preparing for a Release
 
